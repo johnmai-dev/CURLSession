@@ -5,11 +5,11 @@
 //  Created by John Mai on 2024/11/17.
 //
 
-struct CURLSessionConfiguration: @unchecked Sendable {
+public struct CURLSessionConfiguration: @unchecked Sendable {
     let timeout: Int
     let connectionProxyDictionary: [AnyHashable: Any]?
 
-    static let `default` = CURLSessionConfiguration(
+    public static let `default` = CURLSessionConfiguration(
         timeout: 60,
         connectionProxyDictionary: nil
     )
